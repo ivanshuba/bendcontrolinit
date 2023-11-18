@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "====Bendcontrol initialization script===="
+cd ~
 echo "====Updating pacman===="
 sudo pacman -Syu --noconfirm
 echo "====Installing Java===="
