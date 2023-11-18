@@ -25,6 +25,6 @@ sudo pacman -Rcs lightdm --noconfirm
 echo "====Installing XINIT====="
 sudo pacman -S xorg-xinit --noconfirm
 echo "====Writing .xinitrc====="
-echo "cd bendcontrol; bash gradlew run"
+echo "cd bendcontrol; bash gradlew run" > ~/.xinitrc
 echo "====Restarting===="
 sudo reboot
