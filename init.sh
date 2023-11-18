@@ -17,7 +17,7 @@ git fetch
 git pull origin debug/pi
 git checkout origin/debug/pi
 echo "====Building project for faster startup"
-exec gradlew build
+exec bash gradlew build
 echo "====adding user to UUCP group to allow usb device connections===="
 sudo gpasswd -a $USER uucp
 echo "====Removing Desktop Environment"
