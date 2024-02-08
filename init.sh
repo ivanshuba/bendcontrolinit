@@ -25,7 +25,8 @@ sudo pacman -Rcs xfce4-goodies --noconfirm
 sudo pacman -Rcs lightdm --noconfirm
 echo "====Installing XINIT====="
 sudo pacman -S xorg-xinit --noconfirm
+sudo pacman -S openbox --noconfirm
 echo "====Writing .xinitrc====="
-echo "cd bendcontrol; bash gradlew run" > ~/.xinitrc
+echo "cd bendcontrol; java -jar ~/bendcontrol/bendcontrol.jar & exec openbox > ~/.xinitrc
 echo "====Restarting===="
 sudo reboot
