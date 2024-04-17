@@ -15,8 +15,8 @@ echo "Enter your github username and (as a password) personal access token"
 git clone https://github.com/langmuirsystems/bendcontrol.git
 cd bendcontrol
 git fetch
-git pull origin debug/pi
-git checkout origin/debug/pi
+git pull origin main
+git checkout origin/main
 echo "====adding user to UUCP group to allow usb device connections===="
 sudo gpasswd -a $USER uucp
 echo "====Removing Desktop Environment"
